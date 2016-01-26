@@ -31,8 +31,8 @@ echo "Scene"
 # 1) Count the number of words that end with 'ly', sort by frequency. The
 #    top 3 lines should be:
 #      6 only
-#      7 fly
-#      4 truly
+#      6 fly
+#      5 truly
 # 2) Count words that are used only once
 #-----------------------------------------------------------------------------
 
