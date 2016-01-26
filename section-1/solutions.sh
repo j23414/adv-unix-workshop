@@ -13,14 +13,14 @@ set -u
 
 #-----------------------------------------------------------------------------
 # Exercise 1.1 - variables and quotes
-# 1) Assign the names 'Jess', 'Jack', and 'Jenn' to the variables a, b, and c
+# 1) Assign the names 'Jess', 'Jack', and 'Jill' to the variables a, b, and c
 # 2) Add a line that uses these variables to print the sentence:
-#    "Jess, Jack and Jenn say hi!"
+#    "Jess, Jack and Jill say hi!"
 #-----------------------------------------------------------------------------
 
 a=Jess
 b=Jack
-c=Jenn
+c=Jill
 echo "$a, $b, and $c say hi!"
 
 
@@ -28,7 +28,7 @@ echo "$a, $b, and $c say hi!"
 # Exercise 1.2 - parameter expansion, command and arithmetic substitution
 # 1) Use parameter expansion and the variables from Exercise 1.1 to print the
 #    sentence:
-#    "Many Jesses, Jacks, and Jenns say bye!
+#    "Many Jesses, Jacks, and Jills say bye!
 # 2) The command `whoami` prints your username.
 #    The command `date` prints the current time.
 #    Use command substitution to print the sentence:
@@ -101,7 +101,7 @@ echo "$1 + $2 = $(( $1 + $2 ))"
 # 1) Write a for-loop that prints (using the variables from 1.1)
 #    Hello Jess
 #    Hello Jack
-#    Hello Jenn
+#    Hello Jill
 # 2) Write a for-loop that uses command substitution to loop over the first
 #    three names in names.txt (hint: use `head -3`). Output should be:
 #    Hello Alice
@@ -119,11 +119,11 @@ for name in $a $b $c; do
 done
 
 echo
-for name in $(head -3 a.txt); do
+for name in $(head -3 names.txt); do
     echo "Hello $name"
 done
 
-for name in $(head -3 a.txt); do
+for name in $(head -3 names.txt); do
     # The {} around 'name' are actually optional, since '.' is illegal in
     # variable names and thus Bash understands $name is the variable. However
     # it is perhaps clearer to leave the brackets in.

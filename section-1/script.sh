@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 
 #-----------------------------------------------------------------------------
 # This is an option you should use whenever you write a Bash script which
@@ -13,9 +13,9 @@ echo 'Hello World!'
 
 #-----------------------------------------------------------------------------
 # Exercise 1.1 - variables and quotes
-# 1) Assign the names 'Jess', 'Jack', and 'Jenn' to the variables a, b, and c
+# 1) Assign the names 'Jess', 'Jack', and 'Jill' to the variables a, b, and c
 # 2) Add a line that uses these variables to print the sentence:
-#    "Jess, Jack and Jenn say hi!"
+#    "Jess, Jack and Jill say hi!"
 #-----------------------------------------------------------------------------
 
 
@@ -25,7 +25,7 @@ echo 'Hello World!'
 # Exercise 1.2 - parameter expansion, command and arithmetic substitution
 # 1) Use parameter expansion and the variables from Exercise 1.1 to print the
 #    sentence:
-#    "Many Jesses, Jacks, and Jenns say bye!
+#    "Many Jesses, Jacks, and Jills say bye!
 # 2) The command `whoami` prints your username.
 #    The command `date` prints the current time.
 #    Use command substitution to print the sentence:
@@ -45,11 +45,11 @@ echo 'Hello World!'
 
 
 #-----------------------------------------------------------------------------
-# Exercise 1.4 - for-loops
+# (Optional) Advanced Challenge Exercise 1.4 - for-loops
 # 1) Write a for-loop that prints (using the variables from 1.1)
 #    Hello Jess
 #    Hello Jack
-#    Hello Jenn
+#    Hello Jill
 # 2) Write a for-loop that uses command substitution to loop over the first
 #    three names in names.txt (hint: use `head -3`). Output should be:
 #    Hello Alice
