@@ -5,25 +5,23 @@ set -u
 # Advanced UNIX workshop Section 2 - Parsing Hamlet
 #-----------------------------------------------------------------------------
 
-
 # Introductory header for the final report
 echo 'Parsing Hamlet'
 
 
-
 #-----------------------------------------------------------------------------
 # Exercise 2.1
-# 1) Open h1.txt (with less, more, or vi)
-# 2) Familiarize yourself with the format
-# 3) Complete (with simple commands) the code below
+# 1) Look at h1.txt using less to familiarize yourself with the file.
+# 2) How many words are in each Act of Hamlet?
+# 3) List all scenes in Hamlet.
 #-----------------------------------------------------------------------------
 
 echo "Word counts:"
 # Replace the line below with a command that writes word counts for each file
 
+
 echo "Scene"
 # Use grep to list the scenes in all five h*.txt files with one command
-
 
 
 #-----------------------------------------------------------------------------
